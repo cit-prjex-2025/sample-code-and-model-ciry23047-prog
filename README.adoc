@@ -189,19 +189,56 @@ image::sample01_class_01.png[{full-width}]
 
 [source,shell]
 ----
-git status
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+git status結果
+
+ryugu@RyuThinkPad:~/sample-code-and-model-ciry23047-prog$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 ----
 
 問題がなければプッシュしなさい。問題があれば、TAに相談しなさい。
 
 [source,shell]
 ----
-git push
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+git push結果
+ryugu@RyuThinkPad:~/sample-code-and-model-ciry23047-prog$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 15.33 KiB | 7.67 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/cit-prjex-2025/sample-code-and-model-ciry23047-prog.git
+   026b9c3..02d1052  main -> main
 ----
 
 また、 `git log` を実行して過去の処理について確認しなさい。
+[source,shell]
+----
+git log結果
+ryugu@RyuThinkPad:~/sample-code-and-model-ciry23047-prog$ git log
+commit 02d10529b3588071434ac667b1ec7ff912915e29 (HEAD -> main, origin/main, origin/HEAD)
+Author: ciry23047 <ciry23047@g.nihon-u.ac.jp>
+Date:   Tue Nov 11 08:35:58 2025 +0900
+
+    サンプル01差し替え
+
+commit 026b9c3e2b20e2230d42b98462789f21110cb083
+Author: ciry23047 <ciry23047@g.nihon-u.ac.jp>
+Date:   Tue Nov 11 08:30:07 2025 +0900
+
+    画像参照できるように
+
+commit dcc09cb774cdd3be41a562a36a8ecdba192ed874
+Author: ciry23047 <ciry23047@g.nihon-u.ac.jp>
+Date:   Tue Oct 14 17:16:50 2025 +0900
+
+    sample04途中経過
+----
 
 [NOTE]
 --
