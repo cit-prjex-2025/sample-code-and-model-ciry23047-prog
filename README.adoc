@@ -332,22 +332,22 @@ image::traslation_rule_guide.png[{full-width}]
 .クラスの候補（下記リストを書き換える）
 * main_task
 * motor
-* クラス候補のモノA
-* クラス候補のモノB
+* porter
+* carrier
 
 操作の候補（働き）の候補を列挙しなさい（候補でよい）。
 もし、クラスが決定できるなら、後のかっこ内に記載しておきなさい。
 
 .操作の候補（下記リストを書き換える）
-. set_poweer（motor）
-. 操作候補の働き1（クラス候補A）
-. 操作候補の働き2（クラス候補B）
+. set_power（motor）
+. cargo_is_loaded (carrier)
+. run (traser)
 
 関連の候補（クラス間のつながり）を下記に列挙しなさい（候補でよい）
 
 .関連の候補（下記リストを書き換える）
 . main_task -> transporter
-. クラス候補 -> クラス候補
+. porter -> traser
 
 ==== sample04のプロジェクトを作成する
 
